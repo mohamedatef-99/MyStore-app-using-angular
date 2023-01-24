@@ -31,10 +31,6 @@ export class ProductsComponent implements OnInit  {
 
   }
 
-  // addToCart(item: any){
-  //   this.cartService.addToCart(item)
-  //   alert("Added to Your Cart")
-  // }
 
   addToCart(item: any){
     let existingItem = this.cartService.cartItems.find((i:any) => i.id === item.id);
