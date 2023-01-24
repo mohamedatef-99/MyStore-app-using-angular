@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Description of the project
+
+This project is E-Commerce project called MyStore 
+and it has a 6 components (Cart, Products, SingleProduct, Success, Main, Header) 
+and it has also 2 services (Cart Service, Product Service)
+and has app routing modules 
+and model called product
+first we fetch the product from external api (fake api) to service 
+then we create a cart component for the product that user added to cart
+then we create a single product component for the products details
+then we create a success component for confirmation 

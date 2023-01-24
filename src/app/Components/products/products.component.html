@@ -1,0 +1,19 @@
+<div class="products">
+  <div class="container" *ngFor="let item of products">
+    <div class="box">
+      <div class="image" routerLink="/single-prod/{{item.id}}" >
+        <img decoding="async" src="{{ item.image }}" alt="" >
+      </div>
+      <div class="content">
+        <h3>{{item.title}}</h3>
+        <p>{{ item.description }} </p>
+        <span>Price: {{item.price}}$</span>
+        <select [(ngModel)]="item.quantity" class="option">
+          <option *ngFor="let q of quantities" [value]="q">{{q}}</option>
+        </select>
+        <p>Click on Image for more about the product</p>
+        <button (click)=addToCart(item)>Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+
+<div class="products">
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <img decoding="async" src="{{ data.image }}" alt="" >
+      </div>
+      <div class="content">
+        <h3>{{data.title}}</h3>
+        <p> {{ data.description }} </p>
+        <span><strong>Price: {{data.price}}$</strong></span>
+        <span><strong>Category: {{data.category}}</strong></span>
+        <span><strong>Rate: {{data.rating.rate}}</strong></span>
+        <span><strong>Count: {{data.rating.count}}</strong></span>
+      </div>
+      <button routerLink = "/">Back To All Products List</button>
+    </div>
+    
+  </div>
+</div>
+
